@@ -22,10 +22,9 @@ git add . | git add *.ps1
 git rm --cached app.js                                       // ใช้กรณี เคยcommit ไปแล้วแล้วจะเอาเข้า .ignore
 git restore --staged app.js | git reset app.js               // เหมือนกัน เอาออกจาก Staging Area
 git commit -m "new version"
-git tag -a v1.1.0 -m ""
+git tag v1.1.0  | git tag v1.1.2 <commit_id> 
 git log --oneline | --graph  
 git diff <commit_id> <commit_id>
-git tag v1.0.0
 git checkout app.js                       // เหมือนการกด Undo app.js
 git show HEAD | git show <commit_id>
 git reset --option <commit_id> | --soft,--mixed,--hard
