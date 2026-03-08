@@ -42,7 +42,8 @@ git clone https://github.com/kemops/Export-Clone-Hyper-V.git       //คร�
 winget install --id GitHub.cli
 gh auth login
 gh repo create <name_repo> --private --source=. --remote=origin --push
-
+gh repo edit --visibility public --accept-visibility-change-consequences
+gh repo view kemops/git-cheatsheet
 ```
   
 
