@@ -12,6 +12,7 @@
 
 ### GIT-CLI
 ```
+git config --global init.defaultBranch main
 git config --global user.email <"email ex: user@gmail.com">
 git config --global user.name "kemops"
 git config --list
