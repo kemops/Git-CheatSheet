@@ -21,9 +21,11 @@ git status
 git add . | git add *.ps1
 git rm --cached app.js                                       // ใช้กรณี เคยcommit ไปแล้วแล้วจะเอาเข้า .ignore
 git restore --staged app.js | git reset app.js               // เหมือนกัน เอาออกจาก Staging Area
+git commit -m "new version"
+git tag -a v1.1.0 -m ""
 git log --oneline | --graph  
 git diff <commit_id> <commit_id>
-
+git tag v1.0.0
 git checkout app.js                       // เหมือนการกด Undo app.js
 git show HEAD | git show <commit_id>
 git reset --option <commit_id> | --soft,--mixed,--hard
@@ -35,7 +37,7 @@ git merge <name_branch>                   // รวม Branch
 
 git branch -m main
 git remote add origin https://github.com/kemops/git-cheatsheet.git
-git push -u origin main
+git push -u origin main  |  git push origin --tags
 git pull
 git clone https://github.com/kemops/git-cheatsheet.git       //ครั้งแรก
 
