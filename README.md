@@ -50,7 +50,7 @@ gh repo create <name_repo> --private --source=. --remote=origin --push
 gh repo edit --visibility public --accept-visibility-change-consequences
 gh repo view kemops/git-cheatsheet
 gh repo list kemops  |  gh repo list docker --limit 10
-
+gh repo edit kemops/git-cheatsheet --default-branch main
 gh auth refresh -h github.com -s delete_repo
 gh repo delete hello-git --yes
 ```
