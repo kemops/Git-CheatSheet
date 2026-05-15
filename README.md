@@ -47,7 +47,7 @@ git clone https://github.com/kemops/git-cheatsheet.git       //ครั้�
 ```
 winget install --id GitHub.cli
 gh auth login
-gh repo create <name_repo> --private --source=. --remote=origin --push //ต้อง remove origin ก่อน
+gh repo create <name_repo> --private --source=. --remote=origin --push //ต้อง git remote remove origin ก่อน
 gh repo edit --visibility public --accept-visibility-change-consequences
 gh repo rename <new-name> --repo <owner/old-name>
 gh repo view kemops/git-cheatsheet
