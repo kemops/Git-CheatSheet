@@ -36,6 +36,7 @@ git checkout -b <name_branch>             // สร้างและส�
 git merge <name_branch>                   // รวม Branch
 
 git branch -m main
+git remote remove origin
 git remote add origin https://github.com/kemops/git-cheatsheet.git
 git push -u origin main  |  git push origin --tags
 git pull
@@ -46,8 +47,9 @@ git clone https://github.com/kemops/git-cheatsheet.git       //ครั้�
 ```
 winget install --id GitHub.cli
 gh auth login
-gh repo create <name_repo> --private --source=. --remote=origin --push
+gh repo create <name_repo> --private --source=. --remote=origin --push //ต้อง remove origin ก่อน
 gh repo edit --visibility public --accept-visibility-change-consequences
+gh repo rename <new-name> --repo <owner/old-name>
 gh repo view kemops/git-cheatsheet
 gh repo list kemops  |  gh repo list docker --limit 10
 gh repo edit kemops/git-cheatsheet --default-branch main
